@@ -1,9 +1,9 @@
-package com.github.senocak.clinked;
+package com.github.senocak;
 
-import com.github.senocak.clinked.domain.Article;
-import com.github.senocak.clinked.domain.ArticleCriteria;
-import com.github.senocak.clinked.domain.ArticleRepository;
-import com.github.senocak.clinked.domain.ArticleSpecification;
+import com.github.senocak.domain.Article;
+import com.github.senocak.domain.ArticleCriteria;
+import com.github.senocak.domain.ArticleRepository;
+import com.github.senocak.domain.ArticleSpecification;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

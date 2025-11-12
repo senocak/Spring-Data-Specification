@@ -1,4 +1,4 @@
-package com.github.senocak.clinked.domain;
+package com.github.senocak.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

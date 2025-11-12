@@ -1,4 +1,4 @@
-package com.github.senocak.clinked.domain;
+package com.github.senocak.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

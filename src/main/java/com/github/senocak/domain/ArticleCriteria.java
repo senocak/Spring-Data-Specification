@@ -1,4 +1,4 @@
-package com.github.senocak.clinked.domain;
+package com.github.senocak.domain;
 
 public class ArticleCriteria {
     private String title;

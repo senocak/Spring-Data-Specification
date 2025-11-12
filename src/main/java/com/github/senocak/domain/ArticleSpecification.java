@@ -1,4 +1,4 @@
-package com.github.senocak.clinked.domain;
+package com.github.senocak.domain;
 
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;

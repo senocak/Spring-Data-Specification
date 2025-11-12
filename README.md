@@ -1,4 +1,4 @@
-# Clinked Spring Boot Application
+# Spring Data Specification
 
 A Spring Boot REST API application for managing articles with advanced search and filtering capabilities using JPA Specifications.
 
@@ -6,9 +6,6 @@ A Spring Boot REST API application for managing articles with advanced search an
 
 - [Overview](#overview)
 - [Features](#features)
-- [Technologies](#technologies)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
 - [Query Parameters](#query-parameters)
 - [Project Structure](#project-structure)
@@ -16,11 +13,9 @@ A Spring Boot REST API application for managing articles with advanced search an
 - [Examples](#examples)
 
 ## 🎯 Overview
-
 This project demonstrates a RESTful API built with Spring Boot that provides article management functionality. It showcases two different approaches to implementing JPA Specifications for dynamic query filtering: Lambda-based inline specifications and Class-based specifications.
 
 ## ✨ Features
-
 - **RESTful API** for article management
 - **Dynamic Search and Filtering** with multiple criteria:
   - Title (case-insensitive partial match)
@@ -35,70 +30,7 @@ This project demonstrates a RESTful API built with Spring Boot that provides art
 - **Auto-initialization** with sample data on startup
 - **Bean Validation** for request parameters
 
-## 🛠 Technologies
-
-- **Java 21**
-- **Spring Boot 3.5.4**
-- **Spring Data JPA** - Database access and JPA Specifications
-- **Spring Web** - RESTful API
-- **Spring Validation** - Input validation
-- **H2 Database** - In-memory database
-- **Maven** - Build tool
-
-## 📦 Prerequisites
-
-- Java 21 or higher
-- Maven 3.6+ (or use included Maven wrapper)
-
-## 🚀 Getting Started
-
-### Clone the Repository
-
-```bash
-git clone <repository-url>
-cd clinked-springboot
-```
-
-### Build the Project
-
-Using Maven wrapper (recommended):
-
-```bash
-./mvnw clean install
-```
-
-Or using your local Maven installation:
-
-```bash
-mvn clean install
-```
-
-### Run the Application
-
-Using Maven wrapper:
-
-```bash
-./mvnw spring-boot:run
-```
-
-Or using your local Maven:
-
-```bash
-mvn spring-boot:run
-```
-
-The application will start on `http://localhost:8080`
-
-### Access H2 Console
-
-The H2 database console is available at: `http://localhost:8080/h2-console`
-
-- **JDBC URL**: `jdbc:h2:mem:testdb`
-- **Username**: `sa`
-- **Password**: `sa`
-
 ## 📡 API Endpoints
-
 ### Get Articles
 
 Retrieves articles with optional filtering and pagination. Returns results using both Lambda and Class-based specification approaches.
@@ -124,11 +56,11 @@ Retrieves articles with optional filtering and pagination. Returns results using
 ## 📁 Project Structure
 
 ```
-clinked-springboot/
+spring-data-specification/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/github/senocak/clinked/
+│   │   │   └── com/github/senocak/
 │   │   │       ├── ArticleApplication.java          # Main application class & REST controller
 │   │   │       └── domain/
 │   │   │           ├── Article.java                 # JPA Entity
@@ -276,20 +208,3 @@ public class ArticleSpecification implements Specification<Article> {
 ```
 
 Both approaches produce identical results, demonstrating the flexibility of Spring Data JPA Specifications.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
-
-GitHub: [@senocak](https://github.com/senocak)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
----
-
-**Note**: This application uses an in-memory H2 database. All data will be lost when the application stops. For production use, configure a persistent database in `application.yml`.
-
