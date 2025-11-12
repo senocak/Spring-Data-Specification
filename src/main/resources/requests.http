@@ -1,0 +1,9 @@
+### Article Search
+GET http://localhost:8080/api/v1/article
+    ?next=0
+    &max=5
+    &title=2
+    &author=2
+    &slug=article-title-2
+    &publishFrom=2009-01-01
+    &publishTo=2019-01-01
